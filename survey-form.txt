@@ -1,0 +1,83 @@
+** start of undefined **
+<!DOCTYPE html>
+<html>
+   <link rel="stylesheet" href="styles.css"/>
+   <main>
+      <h1 id="title">Luka's Survey Form</h1>
+      <p id="description">A survey of stuffs.</p>
+      <fieldset>
+         <form id="survey-form">
+            <label id="name-label">Enter your name: <input required id="name" type="text" placeholder="Enter your name"/></label>
+            <label id="email-label">Enter your email: <input required id="email" type="email" placeholder="Enter your email"/> </label>
+            <label id="number-label">Enter your Age: <input required id="number" type="number" min="18" max="64" placeholder="Age"/></label>
+            <label>
+               What continent is your favourite?
+               <select required id="dropdown" class="inline">
+                  <option>(Select one)</option>
+                  <option> NA</option>
+                  <option> Europe</option>
+               </select>
+            </label>
+            <label> Select your favourite foods
+            <label><input type="radio" name="name" class="inline" value="pizza"/> Pizza
+            </label>
+            <input type="radio" name="name" class="inline" value="pasta"/> Pasta
+            <label> 1 or 2?
+            </label> 
+            <input type="checkbox" class="inline" value="check"/>
+            <input type="checkbox" class="inline" value="check"/>
+            <label> Additional Comments?<textarea placeholder="Write comments here."></textarea></label>
+            <label>Submit?
+            <input type="submit" id="submit"/>
+            </label>
+         </form>
+      </fieldset>
+   </main>
+</html>
+** end of undefined **
+** start of undefined **
+label,h1,p {
+display: block;
+margin: 0.5rem 0;
+color:white;
+text-align:center;
+}
+body{
+width: 100%;
+height: 100vh;
+margin: 0;
+background-color: #1b1b32;
+color: #f5f6f7;
+font-family: Tahoma;
+font-size: 16px;
+}
+form {
+width: 60vw;
+max-width: 500px;
+min-width: 300px;
+margin: 0 auto;
+padding-bottom: 2em;
+}
+fieldset {
+border: none;
+padding: 2rem 0;
+}
+.inline{
+display: inline;
+width: unset;
+margin: 0 0.5em 0 0;
+vertical-align: middle;
+} 
+input,
+textarea,
+select {
+margin: 10px 0 0 0;
+width: 100%;
+min-height: 2em;
+}
+input, textarea {
+background-color: #0a0a23;
+border: 1px solid #0a0a23;
+color: #ffffff;
+}
+** end of undefined **
